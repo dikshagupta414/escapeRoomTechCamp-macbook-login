@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <!-- <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/latest/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"> -->
+  </head>
+
+  <body oncontextmenu="return false">
+    
+        <!-- <i class="fas fa-camera-retro"></i> fa-camera-retro <br/> -->
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <img class="profile" src="pic1.jpg" alt="Avatar"> <br>
+        <div>Peter Parker</div>
+    </div>
+
+     <!-- Javascript -->
+     <script language="javascript">
+            function check(form){
+                if(form.pswrd.value =="WirelessAutomotiveDelivery"){ //WirelessAutomotiveDelivery
+                    window.location.href = "facts1.html";
+                }
+                else{
+                    alert("The password you entered is incorrect.");
+                }
+            }
+            function showHint(){
+                // if (document.getElementsByClassName("hint").textContent="Forgot Password?"){
+                    console.log(document.querySelector(".hint").textContent);
+                    // document.querySelector(".hint").tagName="DIV"
+                    document.querySelector(".hint").textContent = 'Hint: SpidermanIronmanBlackpanther'
+                    // document.getElementsByClassName("hint").style.display = 'flex'
+                // }
+                // alert("Hint:")
+            }
+      </script>
+
+
+
+    <form name="login"><div class="login">
+        <!-- <input type="text" placeholder="username" name="userid"><br> -->
+        <input type="text" placeholder="Enter Password" name="pswrd"><br>
+
+        <!-- <span class="icon lol"></span> -->
+        <input type="button" onclick="check(this.form)" value="Submit"/>
+    </div></form>
+    <div class="hint" onclick="showHint()">Forgot Password?</div>
+
+   
+
+    <!-- <h1 class="form-signin-heading" id="1">To login, enter password:</h1>
+    <script type="text/javascript">
+      function checkPassword(){
+        var password=document.getElementById("password").value;
+        if(password=='WirelessAutomotiveDelivery'){ //wirelessAutomotiveDelivery   SpidermanIronmanBlackpanther
+          console.log(password);
+          window.location.href = "facts1.html";
+        }
+        if(password=='VirtualEnergyCommunications'){ //VirtualEnergyCommunications
+          console.log(password);
+          window.location.href = "facts2.html";
+        }
+        else{
+          alert("Wrong Password! Try again.");
+        }
+      }
+    </script>
+    <form id="3" class="form-signin">
+      Password: <input class="form-control" type="text" id="password" name="password"/><br/>
+    <input class="btn btn-lg btn-primary btn-block" type="button" value="Submit" onclick="checkPassword()"/>
+    </form>
+    <h4 id='date'></h4> -->
+  </body>
+</html>
+
+
+<script async src="./javascript/index.js"></script>
+<link rel="stylesheet" href="./index.css" />
